@@ -1,0 +1,260 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+.container {
+  height: 1000px;
+}
+
+.darkerbackground {
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0px, rgba(0, 0, 0, 0.8) 100%)
+    repeat 0 0;
+  z-index: -1;
+}
+
+.topnav {
+  background-color: rgb(35, 30, 35, 0.9);
+  overflow: hidden;
+  position: relative;
+}
+.topnav a {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 30px;
+  padding: 14px 0;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px; 
+}
+.topnav a.home {
+  color: #fbc403;
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+}
+.topnav a:hover {
+  background-color: rgb(35, 30, 35);
+}
+.logo {
+  height: 35px;
+  padding-right: 5px;
+}
+.center {
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  position: absolute;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 100px;
+  color: #fff;
+  z-index: 2;
+}
+
+div.center {
+  display: flex;
+  align-items: center;
+}
+
+div.center p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.MainText {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.MainText a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 100px;
+  color: #fff;
+  z-index: 2;
+}
+
+.takeUpButton {
+  width: 50%;
+  position: relative;
+  bottom: 0;
+  left: 25%;
+}
+
+.normalText {
+  font-size: 21px;
+  text-align: center;
+  margin: 0 300px;
+}
+
+.myBtn {
+  position: inherit;
+  margin-top: 50px;
+  z-index: 99;
+  border: 2px solid #fbc403;
+  outline: none; 
+  background-color: rgb(251, 196, 3, 0.25); 
+  color: #f2f2f2; 
+  cursor: pointer; 
+  padding: 20px 100px; 
+  border-radius: 20px; 
+  font-size: 18px; 
+  transform: translate(-50%, 0%);
+}
+
+.myBtn:hover {
+  background-color: rgb(251, 196, 3, 0.5);
+  animation: pulse 2s infinite;
+  animation-direction: alternate;
+}
+
+#section2 {
+  height: 250px;
+}
+
+.container3{
+  width: 100%;
+  margin: 100px auto;
+  color: #f2f2f2;;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+.container3 p{
+  font-size:90px;
+}
+
+main img{
+  margin: 20px 20px;
+  width: 400px;
+  height: 300px;
+  border-radius:15px;
+  background: rgb(35, 30, 35, 0.7);
+  background-clip: border-box;
+  padding-bottom:400px;
+}
+
+.pictureList
+{
+  position: relative;
+  text-align: center;
+  display:inline-block;
+}
+
+.subtitle{
+  position: absolute;
+  whitespace:normal;
+  width:350px;
+  top: 500px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgb(251, 196, 3, 0.25);
+  }
+  100% {
+    background-color: rgb(251, 196, 3, 0.6);
+  }
+}
+
+
+@media (min-width: 360px) AND (max-width: 640px) {
+  .topnav a {
+    font-size: 15px; 
+  }
+  .topnav a.home {
+    font-size: 20px;
+  }
+  .logo {
+    height: 0px;
+    padding-right: 5px;
+  }
+  .center{
+    font-size: 30px;
+  }
+  .container2{
+    font-size: 40px;
+  }
+  .normalText {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 30px;
+  }
+  #section2 {
+    height: 150px;
+  }
+  .container3{
+    width:350px;
+    margin: 30px auto;
+  }
+  .container3 p{
+    font-size:40px;
+  }
+  main img{
+    margin: 5px 5px;
+    width: 200px;
+    height: 150px;
+    border-radius:15px;
+    background: rgb(35, 30, 35, 0.7);
+    background-clip: border-box;
+    padding-bottom:650px;
+  }
+  .subtitle{
+    width:150px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 641px) AND (max-width: 1079px) {
+
+  .logo {
+    padding-right: 0;
+  }
+  .topnav a.home {
+    font-size: 25px;
+  }
+  .center{
+    font-size: 70px;
+  }
+  .container2{
+    font-size: 70px;
+  }
+  .normalText {
+    font-size: 25px;
+    text-align: center;
+    margin: 0 50px;
+  }
+  #section2 {
+    height: 300px;
+  }
+}
