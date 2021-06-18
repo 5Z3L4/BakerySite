@@ -189,7 +189,7 @@ main img{
 }
 
 
-@media (min-width: 360px) AND (max-width: 640px) {
+@media (min-width: 300px) AND (max-width: 640px) {
   .topnav a {
     font-size: 15px; 
   }
