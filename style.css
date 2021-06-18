@@ -8,7 +8,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
-  overflow-x: hidden;
 }
 
 .container {
@@ -26,7 +25,6 @@ body {
     linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0px, rgba(0, 0, 0, 0.8) 100%)
     repeat 0 0;
   z-index: -1;
-  overflow:none;
 }
 
 .topnav {
@@ -174,7 +172,6 @@ main img{
 
 .subtitle{
   position: absolute;
-  whitespace:normal;
   width:350px;
   top: 500px;
   left: 50%;
